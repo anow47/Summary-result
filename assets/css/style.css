@@ -134,6 +134,11 @@ h1,h2,h3{
 .btn:hover{
     background: hsl(241, 81%, 54%);
 }
+@media screen and (max-width: 1200px){
+    .container{
+        width: 90%;
+    }
+}
 @media screen and (max-width: 768px){
     .container{
         display: flex;
