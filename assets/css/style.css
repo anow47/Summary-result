@@ -1,0 +1,151 @@
+body{
+    font-family: Hanken Grotesk;
+}
+.flex{
+    display: flex;
+}
+.aln-itm{
+    align-items: center;
+}
+.just-cot{
+    justify-content: space-between;
+}
+.center{
+    justify-content: center;
+}
+.main{
+    min-height: 100vh;
+}
+h1,h2,h3{
+    margin: 0;
+}
+.container{
+    gap: 1rem;
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 18px 32px 0px rgb(217 217 239);
+}
+.result{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-image: linear-gradient(#7857ff, #2e2be9);
+    border-radius: 20px;
+    height: 500px;
+}
+.result h3,p{
+    color: hsl(241, 100%, 89%);
+}
+.result h3{
+    padding-top: 50px;
+}
+.result p{
+    padding: 0 50px 15% 15%;
+    font-size: 20px;
+    font-weight: 400;
+}
+.result-circle{
+    flex-direction: column;
+    width: 180px;
+    height: 180px;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    text-align: center;
+}
+.result-circle h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+.result-circle span{
+    color: hsl(241, 100%, 89%);
+}
+.result h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+.summary{
+    width: 50%;
+    display: grid;
+    place-items: left;
+    padding: 40px 30px;
+    text-align: left;
+}
+.summary-container{
+    text-align: center;
+    width: 100%;
+}
+.summary-result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+.summary-result  p{
+    color: #000;
+    font-weight: 800;
+    font-size: 20px;
+    padding-right: 15px;
+}
+.summary-result p > span{
+    color: gray;
+}
+.icon-name{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-left: 15px;
+}
+.reaction{
+    color: hsl(0, 100%, 67%);
+    background: hsl(0, 100%, 98%);
+}
+.memory{
+    color: hsl(39, 100%, 56%);
+    background: hsl(39, 100%, 98%);
+}
+.verbal{
+    color: hsl(166, 100%, 37%);
+    background: hsl(166, 100%, 98%);
+}
+.visual{
+    color: hsl(234, 85%, 45%);
+    background: hsl(234, 85%, 97%);
+}
+.btn{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 30px;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    font-weight: 700;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background: hsl(241, 81%, 54%);
+}
+@media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 0;
+    }
+    .result{
+        width: 100%;
+    }
+    .summary{
+        width: 90%;
+        padding-top: 0;
+    }
+}
